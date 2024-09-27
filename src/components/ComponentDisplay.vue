@@ -8,7 +8,7 @@ defineProps<{ link?: string }>();
       v-if="link"
       :href="link"
       target="_blank"
-      class="group absolute top-1 mx-1 rounded-full bg-white px-2 text-xs/6 shadow-md"
+      class="group absolute top-1 mx-1 rounded-full bg-white/70 px-2 text-xs/6 shadow-md"
     >
       <span>Original design: </span>
       <span class="group-hover:underline">{{ link }}</span>

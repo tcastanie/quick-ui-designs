@@ -7,12 +7,9 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        poppins: [
-          {
-            name: 'Poppins',
-            weights: ['400', '700'],
-          }
-        ]
+        'poppins': ['Poppins:400,700'],
+        'ibm-plex-sans': ['IBM Plex Sans:400,500,700'],
+        'merriweather': ['Merriweather:700'],
       }
     }),
   ],
