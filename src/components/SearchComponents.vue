@@ -1,5 +1,5 @@
 <template>
-  <div class="font-ibm-plex-sans grid min-h-screen place-items-center gap-y-4 bg-[#F1F1F1] text-lg/6 text-white lg:grid-cols-2">
+  <div class="grid min-h-screen place-items-center gap-y-4 bg-[#F1F1F1] text-lg/6 text-white font-ibm-plex-sans lg:grid-cols-2">
     <div class="max-w-5xl flex flex-1 flex-wrap place-items-center gap-4 rounded-lg bg-[#373F4D] px-14 py-13 lg:col-span-2">
       <div class="relative min-w-50 flex-1 md:max-w-2/5">
         <input
@@ -24,7 +24,7 @@
     
     <div class="grid max-w-md place-items-stretch gap-3 rounded-lg bg-[#373F4D] px-18 py-23">
       <div class="grid mb-9 gap-6 text-center">
-        <div class="font-merriweather text-[22px]/7 font-bold">
+        <div class="text-[22px]/7 font-bold font-merriweather">
           Need to hire a freelancer?
         </div>
         <p>Sign up, type in what you need and receive free quotes in seconds</p>
@@ -39,7 +39,7 @@
       </button>
     </div>
     <div class="max-w-lg flex flex-wrap items-center gap-x-4 gap-y-10 rounded-lg bg-[#373F4D] px-11 py-14">
-      <div class="font-merriweather flex-full text-center text-[22px]/7 font-bold">
+      <div class="flex-full text-center text-[22px]/7 font-bold font-merriweather">
         What do you need?
       </div>
       <button class="max-w-1/2 flex-1 rounded from-[#FF7A59] to-[#FF9863] bg-gradient-to-br py-5 text-center font-medium hover:bg-[#FF9863] hover:bg-none">
