@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import WebshopComponents from './components/WebshopComponents.vue';
 import BillingPage from './components/BillingPage.vue';
 import PricingCard from './components/PricingCard.vue';
 import SearchComponents from './components/SearchComponents.vue';
@@ -8,6 +9,11 @@ import ComponentDisplay from './components/ComponentDisplay.vue';
 
 <template>
   <div class="grid divide-y divide-zinc">
+    <ComponentDisplay
+      link="https://www.uidesigndaily.com/posts/sketch-webshop-components-button-card-day-1149"
+    >
+      <WebshopComponents />
+    </ComponentDisplay>
     <ComponentDisplay
       link="https://www.uidesigndaily.com/posts/figma-billing-page-payment-day-1585"
     >

@@ -10,6 +10,7 @@ export default defineConfig({
         'poppins': ['Poppins:400,500,700'],
         'ibm-plex-sans': ['IBM Plex Sans:400,500,700'],
         'merriweather': ['Merriweather:700'],
+        'mulish': ['Mulish:400,600,700'],
       }
     }),
   ],
