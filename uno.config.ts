@@ -1,4 +1,4 @@
-import { defineConfig, presetUno, presetIcons, presetWebFonts } from 'unocss'
+import { defineConfig, presetUno, presetIcons, presetWebFonts, transformerVariantGroup  } from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -13,5 +13,8 @@ export default defineConfig({
         'mulish': ['Mulish:400,600,700'],
       }
     }),
+  ],
+  transformers: [
+    transformerVariantGroup(),
   ],
 })

@@ -38,7 +38,7 @@ const prices = [
         :key="price.title"
         class="grid justify-items-start"
       >
-        <div class="mb-5 text-2xl font-bold font-merriweather">
+        <div class="mb-5 text-2xl font-(bold merriweather)">
           {{ price.title }}
         </div>
         <div class="text-4xl/12 font-bold">
@@ -50,7 +50,7 @@ const prices = [
         <p class="mb-12.5 text-xl font-medium">
           {{ price.description }}
         </p>
-        <button :class="[price.ctaColor, 'rounded-[10px] p-5 text-xl text-black font-medium hover:shadow']">
+        <button :class="[price.ctaColor, 'rounded-[10px] p-5 text-(xl black) font-medium hover:shadow']">
           {{ price.ctaLabel }}
         </button>
       </div>

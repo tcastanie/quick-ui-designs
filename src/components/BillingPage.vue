@@ -22,7 +22,7 @@ const formatDate = (date: string) => format(new Date(date), 'MMM. d, yyyy', { lo
 
 <template>
   <div class="grid min-h-screen place-items-center bg-[#E8E8FD]">
-    <div class="relative flex text-sm text-[#1A194D] font-medium font-poppins">
+    <div class="relative flex text-sm text-[#1A194D] font-(medium poppins)">
       <div class="pointer-events-none absolute inset-0 w-64 rounded-[46px] bg-[#EE4D38] -bottom-12 -left-12 -top-12" />
       <div class="z-1 flex flex-initial flex-col rounded-l-[30px] bg-[#F8F8FF] px-4 py-8">
         <div class="flex gap-4 px-6 py-6">
@@ -83,7 +83,7 @@ const formatDate = (date: string) => format(new Date(date), 'MMM. d, yyyy', { lo
               <div
                 v-for="({ date, type }, i) of billingItems"
                 :key="i"
-                class="grid grid-cols-3 items-center gap-28 rounded-lg px-4 py-2 text-base hover:bg-white hover:shadow-[#DFDFFD]/60 hover:shadow-lg"
+                class="grid grid-cols-3 items-center gap-28 rounded-lg px-4 py-2 text-base hover:(bg-white shadow-[#DFDFFD]/60 shadow-lg)"
               >
                 <span>{{ formatDate(date) }}</span>
                 <span>{{ type }}</span>

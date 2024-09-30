@@ -20,15 +20,15 @@
       </div>
     </div>
     
-    <div class="col-span-3 max-w-2xl flex rounded-2xl bg-[#EBF0F3] shadow-[#8FB6D1]/40 shadow-2xl">
+    <div class="col-span-3 max-w-2xl flex rounded-2xl bg-[#EBF0F3] shadow-([#8FB6D1]/40 2xl)">
       <div class="max-w-2/5 flex-auto">
         <img
           src="/running-shoe.png"
           class="object-none object-top-left"
         >
       </div>
-      <div class="relative max-w-3/5 flex flex-1 flex-col justify-center p-12">
-        <div class="absolute right-8 top-8 rounded bg-[#FFA2AD] p-4 py-2 text-lg/6 text-white font-bold">
+      <div class="relative max-w-3/5 flex flex-(1 col) justify-center p-12">
+        <div class="absolute right-8 top-8 rounded bg-[#FFA2AD] p-4 py-2 text-(lg/6 white) font-bold">
           Sold out
         </div>
         <div class="mb-2 text-2xl">
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="col-span-2 max-w-sm w-full flex flex-col place-items-center rounded-2xl bg-[#EBF0F3] p-21 shadow-[#8FB6D1]/40 shadow-2xl">
+    <div class="col-span-2 max-w-sm w-full flex flex-col place-items-center rounded-2xl bg-[#EBF0F3] p-21 shadow-([#8FB6D1]/40 2xl)">
       <div class="mb-5 text-2xl">
         Legend essential
       </div>
