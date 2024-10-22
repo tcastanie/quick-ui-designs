@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import DarkThemeComponents from './components/DarkThemeComponents.vue';
 import AvailabilityCard from './components/AvailabilityCard.vue';
 import WebshopComponents from './components/WebshopComponents.vue';
 import BillingPage from './components/BillingPage.vue';
@@ -10,6 +11,11 @@ import ComponentDisplay from './components/ComponentDisplay.vue';
 
 <template>
   <div class="grid divide-y divide-zinc">
+    <ComponentDisplay
+      link="https://www.uidesigndaily.com/posts/sketch-dark-theme-components-ui-kit-day-917"
+    >
+      <DarkThemeComponents />
+    </ComponentDisplay>
     <ComponentDisplay
       link="https://www.uidesigndaily.com/posts/edit-availability"
     >
