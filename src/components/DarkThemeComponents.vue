@@ -2,6 +2,91 @@
 import { ref } from 'vue';
 import { SliderRange, SliderRoot, SliderThumb, SliderTrack } from 'radix-vue'
 
+import { use } from 'echarts/core';
+import { LineChart } from 'echarts/charts';
+import { GridComponent, MarkPointComponent } from 'echarts/components';
+import { SVGRenderer } from 'echarts/renderers';
+import VChart from 'vue-echarts';
+
+use([GridComponent, MarkPointComponent, LineChart, SVGRenderer]);
+const option = ref({
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    axisLine: {
+      lineStyle: {
+        color: '#2E3847'
+      }
+    },
+    axisTick: {
+      show: false,
+    },
+    axisLabel: {
+      color: '#B0BBCE',
+      fontSize: 16,
+    },
+    data: [0,1,2,3,4,5,6,7],
+  },
+  yAxis: {
+    type: 'value',
+    interval: 10,
+    max: 40,
+    axisLine: {
+      show: true,
+      lineStyle: {
+        color: '#2E3847'
+      }
+    },
+    splitLine: {
+      lineStyle: {
+        type: [6, 12],
+        dashOffset: 0,
+        color: '#2E3847'
+      }
+    },
+    axisLabel: {
+      color: '#B0BBCE',
+      fontSize: 16,
+    }
+  },
+  grid: {
+    left: '3%',
+    top: '40px',
+    right: '7%',
+    bottom: '20px',
+    containLabel: true,
+  },
+  series: [
+    {
+      data: [0, 10, 5, 33.4, 25.5, 20.5, 19.8, 28.3],
+      type: 'line',
+      smooth: true,
+      silent: true,
+      symbol: 'none',
+      areaStyle: {
+        color: '#151B25',
+      },
+      lineStyle: {
+        width: 4,
+        color: '#955BF6',
+      },
+      markPoint: {
+        symbol: 'rect',
+        symbolSize: [60, 30],
+        symbolOffset: [0, '-60%'],
+        itemStyle: {
+          color:'#19202C',
+        },
+        label: {
+          color: '#B0BBCE',
+          fontSize: 14,
+        },
+        data: [{ type: 'max' }]
+      },
+    }
+  ]
+})
+
 const navItems = [
   { name: 'Home' },
   { name: 'About' },
@@ -10,7 +95,6 @@ const navItems = [
   { name: 'Sign Up', button: true }
 ];
 const optionsItems = ['Sound', 'Effects', 'Animations', 'Preferences'];
-
 const openOptions = ref(false);
 const slider1 = [70];
 const slider2 = [20, 60];
@@ -35,7 +119,7 @@ const slider2 = [20, 60];
         </nav>
       </div>
       <div class="col-span-6 rounded-[10px] bg-[#1E2531]">
-        todo chart
+        <VChart :option />
       </div>
       <div class="grid col-span-4 gap-30 rounded-[10px]">
         <div class="relative max-w-[120px] flex flex-col gap-y-4">
@@ -70,7 +154,7 @@ const slider2 = [20, 60];
               <SliderTrack class="relative h-2.5 grow rounded-full bg-[#1E2531]">
                 <SliderRange class="absolute h-full rounded-full from-[#498BFB] to-[#955BF6] bg-gradient-to-r" />
               </SliderTrack>
-              <SliderThumb class="block size-5 border-2 border-[#945BF5] rounded-full bg-[#181F2B] focus:(border-4 outline-none) hover:border-3" />
+              <SliderThumb class="block size-4 rounded-full bg-[#181F2B] ring-2 ring-[#945BF5] focus:(outline-none ring-4) hover:ring-3" />
             </SliderRoot>
             <div class="flex justify-between">
               <span>min</span>
@@ -80,13 +164,14 @@ const slider2 = [20, 60];
           <div class="grid gap-y-1">
             <SliderRoot
               :default-value="slider2"
+              :min-steps-between-thumbs="10"
               class="relative h-5 w-full flex touch-none select-none items-center"
             >
               <SliderTrack class="relative h-2.5 grow rounded-full bg-[#1E2531]">
                 <SliderRange class="absolute h-full rounded-full from-[#498BFB] to-[#955BF6] bg-gradient-to-r" />
               </SliderTrack>
-              <SliderThumb class="block size-5 border-2 border-[#945BF5] rounded-full bg-[#181F2B] focus:(border-4 outline-none) hover:border-3" />
-              <SliderThumb class="block size-5 border-2 border-[#945BF5] rounded-full bg-[#181F2B] focus:(border-4 outline-none) hover:border-3" />
+              <SliderThumb class="block size-4 rounded-full bg-[#181F2B] ring-2 ring-[#945BF5] focus:(outline-none ring-4) hover:ring-3" />
+              <SliderThumb class="block size-4 rounded-full bg-[#181F2B] ring-2 ring-[#945BF5] focus:(outline-none ring-4) hover:ring-3" />
             </SliderRoot>
             <div class="flex justify-between">
               <span>0</span>
@@ -98,7 +183,3 @@ const slider2 = [20, 60];
     </div>
   </div>
 </template>
-
-<style scoped>
-
-</style>
