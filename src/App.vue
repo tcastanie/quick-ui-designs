@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import LandingPage from './components/LandingPage.vue';
 import DarkThemeComponents from './components/DarkThemeComponents.vue';
 import AvailabilityCard from './components/AvailabilityCard.vue';
 import WebshopComponents from './components/WebshopComponents.vue';
@@ -11,6 +12,11 @@ import ComponentDisplay from './components/ComponentDisplay.vue';
 
 <template>
   <div class="grid divide-y divide-zinc">
+    <ComponentDisplay
+      link="https://www.uidesigndaily.com/posts/sketch-landing-page-website-subscribe-day-1173"
+    >
+      <LandingPage />
+    </ComponentDisplay>
     <ComponentDisplay
       link="https://www.uidesigndaily.com/posts/sketch-dark-theme-components-ui-kit-day-917"
     >
