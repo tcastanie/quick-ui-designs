@@ -7,7 +7,7 @@ const menuItems = [
 </script>
 
 <template>
-  <div class="relative grid min-h-screen place-items-center overflow-hidden bg-[#190A6A] font-mulish">
+  <div class="grid min-h-screen place-items-center overflow-hidden bg-[#190A6A] font-mulish">
     <div class="pointer-events-none absolute right-8 size-92 rounded-full bg-white -top-16" />
     <div class="pointer-events-none absolute left-8 size-92 rounded-full bg-[#FF8364] -bottom-16" />
     <div class="grid grid-cols-30 max-w-[1440px] py-32 -rotate-15">
