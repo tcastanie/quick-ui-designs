@@ -7,7 +7,7 @@ const availabilityItems = reactive([
 </script>
 
 <template>
-  <div class="font-inter grid min-h-screen place-items-center bg-[#F5F8FF] text-lg/5.5 text-[#25297B] font-semibold">
+  <div class="grid min-h-screen place-items-center bg-[#F5F8FF] text-lg/5.5 text-[#25297B] font-semibold font-inter">
     <div class="pointer-events-none absolute size-120 rounded-full bg-[#E7EEFC]" />
     <div class="z-1 grid max-w-sm border-(3 [#1C1E57]) rounded-[40px] bg-white p-14">
       <div class="mb-4 text-2xl font-bold font-merriweather">
