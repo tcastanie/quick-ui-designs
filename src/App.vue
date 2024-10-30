@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import FileUploadForm from './components/FileUploadForm.vue';
 import LandingPage from './components/LandingPage.vue';
 import DarkThemeComponents from './components/DarkThemeComponents.vue';
 import AvailabilityCard from './components/AvailabilityCard.vue';
@@ -12,6 +13,11 @@ import ComponentDisplay from './components/ComponentDisplay.vue';
 
 <template>
   <div class="grid divide-y divide-zinc">
+    <ComponentDisplay
+      link="https://www.uidesigndaily.com/posts/sketch-file-upload-form-day-919"
+    >
+      <FileUploadForm />
+    </ComponentDisplay>
     <ComponentDisplay
       link="https://www.uidesigndaily.com/posts/sketch-landing-page-website-subscribe-day-1173"
     >
