@@ -3,7 +3,7 @@ defineProps<{ link?: string }>();
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative overflow-hidden">
     <a
       v-if="link"
       :href="link"

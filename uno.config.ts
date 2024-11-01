@@ -12,6 +12,7 @@ export default defineConfig({
         'merriweather': ['Merriweather:700'],
         'mulish': ['Mulish:400,600,700,900'],
         'inter': ['Inter:600'],
+        'montserrat': ['Montserrat:600'],
       }
     }),
   ],
