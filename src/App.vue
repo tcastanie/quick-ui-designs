@@ -1,14 +1,17 @@
 <script lang="ts" setup>
+import { defineAsyncComponent } from 'vue';
+
+import ComponentDisplay from './components/ComponentDisplay.vue';
 import FileUploadForm from './components/FileUploadForm.vue';
 import LandingPage from './components/LandingPage.vue';
-import DarkThemeComponents from './components/DarkThemeComponents.vue';
 import AvailabilityCard from './components/AvailabilityCard.vue';
 import WebshopComponents from './components/WebshopComponents.vue';
 import BillingPage from './components/BillingPage.vue';
 import PricingCard from './components/PricingCard.vue';
 import SearchComponents from './components/SearchComponents.vue';
 import UiProfileCard from './components/UiProfileCard.vue';
-import ComponentDisplay from './components/ComponentDisplay.vue';
+
+const DarkThemeComponents = defineAsyncComponent(() => import('./components/DarkThemeComponents.vue'));
 </script>
 
 <template>
