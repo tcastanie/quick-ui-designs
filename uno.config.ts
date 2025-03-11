@@ -1,8 +1,8 @@
-import { defineConfig, presetUno, presetIcons, presetWebFonts, transformerVariantGroup  } from 'unocss'
+import { defineConfig, presetWind3, presetIcons, presetWebFonts, transformerVariantGroup  } from 'unocss'
 
 export default defineConfig({
   presets: [
-    presetUno(),
+    presetWind3(),
     presetIcons(),
     presetWebFonts({
       provider: 'google',
